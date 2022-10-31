@@ -8,7 +8,7 @@ def check_lang(lang):
     languages = ['ar', 'ca', 'cs', 'da', 'de', 'el', 'es', 'fi',
                  'fr', 'it', 'ko', 'nl', 'pl', 'pt', 'ro', 'ru', 'sk', 'uk']
     if lang not in languages:
-        raise ValueError('There is no such language.')
+        raise ValueError(f'There is no such language "{lang}"')
 
 
 def pytest_addoption(parser):
